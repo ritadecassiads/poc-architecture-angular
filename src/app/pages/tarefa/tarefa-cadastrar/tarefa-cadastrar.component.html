@@ -1,0 +1,29 @@
+<div class="cadastro-tarefa">
+
+  <div>
+    <mat-form-field appearance="outline">
+      <mat-label>Título</mat-label>
+      <input matInput name="titulo" required [(ngModel)]="tarefa.titulo" placeholder="Placeholder">
+    </mat-form-field>
+  </div>
+
+  <div>
+    <mat-form-field appearance="outline">
+      <mat-label>Descrição</mat-label>
+      <input matInput name="titulo" name="descricao" [(ngModel)]="tarefa.descricao" placeholder="Placeholder">
+    </mat-form-field>
+  </div>
+
+  <mat-form-field>
+    <mat-label>Data de Conclusão</mat-label>
+    <input matInput [matDatepicker]="picker" name="concluirEm" [(ngModel)]="tarefa.concluirEm">
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <div>
+    <button mat-fab extended color="primary" routerLink="" (click)="salvarTarefa()" type="submit">
+      {{ tarefa.tarefaId ? 'Editar' : 'Salvar' }}
+    </button>
+  </div>
+</div>

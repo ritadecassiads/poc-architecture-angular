@@ -1,0 +1,27 @@
+<!-- <mat-toolbar class="example-header">Header</mat-toolbar> -->
+
+<mat-sidenav-container class="example-container">
+
+    <mat-sidenav #sidenav mode="side" opened class="example-sidenav">
+        <div class="div-side-nav">
+            <a mat-icon-button routerLink="/pages/tarefa/listar">
+                <mat-icon class="icone-side-nav">menu</mat-icon>
+                <span class="titulo-side-nav">Minhas tarefas</span>
+            </a>
+        </div>
+
+        <div class="div-side-nav">
+            <a mat-icon-button routerLink="/pages/tarefa/cadastrar">
+                <mat-icon class="icone-side-nav">add</mat-icon>
+                <span class="titulo-side-nav">Cadastrar</span>
+            </a>
+        </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet> <!-- o componente da rota será aberto dentro dessa tag -->
+
+        </router-outlet>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>

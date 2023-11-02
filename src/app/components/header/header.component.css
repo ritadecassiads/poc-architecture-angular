@@ -1,0 +1,15 @@
+a{
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+}
+
+
+a.link-paginas:visited{ 
+    /* Estilo para links ativos (selecionados) */
+      color: white;
+}
+
+.header-titulo{
+    margin-left: 15px;
+}
