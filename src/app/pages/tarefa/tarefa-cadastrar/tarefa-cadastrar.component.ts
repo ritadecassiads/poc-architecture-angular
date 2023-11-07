@@ -79,7 +79,7 @@ export class TarefaCadastrarComponent implements OnInit {
     const timezoneOffset = data.getTimezoneOffset();
     const dataUTC = new Date(data.getTime() + timezoneOffset * 60 * 1000);
     const dataFormatada = dataUTC.toISOString();
-    this.tarefa.concluirEm = new Date(date);
+    this.tarefa.concluirEm = new Date(dataFormatada);
 
     console.log("converteu a data", this.tarefa.concluirEm);
   }

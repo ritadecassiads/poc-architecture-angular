@@ -1,4 +1,4 @@
-.example-container {
+.container-sidenav {
   position: absolute;
   top: 60px;
   bottom: 60px;
@@ -6,50 +6,39 @@
   right: 0;
 }
 
-.example-sidenav {
+.div-side-nav {
+  display: flex;
+}
+
+.titulo-side-nav {
+  font-size: 15px;
+  white-space: nowrap;
+  font-weight: normal;
+}
+
+.link-side-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 200px;
-  background: white;
 }
 
-.example-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+.item-sidenav{
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 2px;
 }
 
-.example-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.icon-sidenav{
+  margin-right: 6px;
 }
 
-.div-side-nav{
-    margin: 5px 15px;
+.primeiro-item{
+  margin-top: 10px;
+  margin-bottom: 5px;
+
 }
 
-.titulo-side-nav{
-    font-size: 15px;
-    white-space: nowrap;
-    margin-left: 5px;
-}
+.container-sidenav{
+  height: calc(100% - 64px);
 
-.icone-side-nav, .titulo-side-nav{
-    display: inline;
-}
-
-.link-side-nav{
-  text-decoration: none;
-}
-
-a{
-  color: inherit;
-}
-
-.menu-side-nav{
-  font-size: 15px;
 }

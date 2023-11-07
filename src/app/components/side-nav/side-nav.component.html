@@ -1,21 +1,23 @@
 <!-- <mat-toolbar class="example-header">Header</mat-toolbar> -->
 
-<mat-sidenav-container class="example-container">
+<mat-sidenav-container class="container-sidenav">
 
-    <mat-sidenav #sidenav mode="side" opened class="example-sidenav">
-        <div class="div-side-nav">
-            <a mat-icon-button routerLink="/pages/tarefa/listar">
-                <mat-icon class="icone-side-nav">menu</mat-icon>
+    <mat-sidenav #sidenav mode="side" opened>
+
+        <a mat-button routerLink="/pages/tarefa/listar" class="link-side-nav primeiro-item">
+            <div class="item-sidenav">
+                <mat-icon class="icon-sidenav">menu</mat-icon>
                 <span class="titulo-side-nav">Minhas tarefas</span>
-            </a>
-        </div>
+            </div>
+        </a>
 
-        <div class="div-side-nav">
-            <a mat-icon-button routerLink="/pages/tarefa/cadastrar">
-                <mat-icon class="icone-side-nav">add</mat-icon>
+        <a mat-button routerLink="/pages/tarefa/cadastrar">
+            <div class="item-sidenav">
+                <mat-icon class="icon-sidenav">add</mat-icon>
                 <span class="titulo-side-nav">Cadastrar</span>
-            </a>
-        </div>
+            </div>
+        </a>
+
     </mat-sidenav>
 
     <mat-sidenav-content>
